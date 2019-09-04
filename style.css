@@ -1,0 +1,60 @@
+body{
+  background-color: black;
+  color: grey;
+}
+
+.questionnaire {
+  display: table-row;
+}
+
+.questionnaire .alert {
+  color: red;
+  text-transform: uppercase;
+}
+
+.questionnaire  label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+.questionnaire label {
+    padding-right: 10px;
+}
+
+.fake_button {
+	background-color:#44c767;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:2px solid #18ab29;Cliquez <a href="#suite">ici</a>
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:24px;
+	font-weight:bold;
+	font-style:italic;
+	padding:11px 31px;
+	text-decoration:none;
+	text-shadow:41px -11px 1px #2f6627;
+
+  position: relative;
+  transform: translate(180px 0px);
+}
+
+.fake_button span {
+  position: relative;
+  transform: translate(-180px 0px);
+}
+
+.fake_button:hover {
+	background-color:#5cbf2a;
+}
+.fake_button:active {
+	position:relative;
+	top:1px;
+}
+.fake_button a {
+  text-decoration: none;
+  color: green;
+}
