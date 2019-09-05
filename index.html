@@ -8,31 +8,44 @@
 </head>
 
 <body>
-  <form class="questionnaire" action="index.html" method="post">
+  <div class="part">
+    <form class="questionnaire" action="index.html" method="post">
+      <div class="alert">
+        Les adresses ne correspondent pas !
+      </div>
 
-    <div class="alert">
-      Les adresses ne correspondent pas !
-    </div>
+      <div class="form_part">
+        <label for="email">Email*</label>
+        <input type="email" name="email" value="Mon adresse mail">
+      </div>
 
-    <div class="questionnaire_question">
-      <label for="email">Email*</label>
-      <input type="email" name="email" value="Mon adresse mail">
-    </div>
+      <div class="form_part">
+        <button type="button" name="envoyer">Envoyer</button>
+      </div>
 
-    <div class="questionnaire_question">
-      <button type="button" name="envoyer">Envoyer</button>
-    </div>
+      <div class="form_part">
+        <label for="confirmation_email">Confirmation*</label>
+        <input type="email" id="small-input" name="confirmation_email" value="Confirmer mon adresse mail">
+      </div>
+    </form>
+  </div>
 
-    <div class="questionnaire_question">
-      <label for="confirmation_email">Confirmation*</label>
-      <input type="email" id="small-input" name="confirmation_email" value="Confirmer mon adresse mail">
-    </div>
+  <div class="part">
+    <button type="button" class="fake_button" name="fake_button">
+      <span>Cliquez <a href="#suite">ici</a></span>
+    </button>
+  </div>
 
-  </form>
+  <div class="part">
 
-  <button type="button" class="fake_button" name="fake_button">
-    <span>Cliquez <a href="#suite">ici</a></span>
-  </button>
+  </div>
+
+  <div class="part">
+
+  </div>
+
+
+
 </body>
 
 </html>

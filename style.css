@@ -3,6 +3,21 @@ body{
   color: grey;
 }
 
+/* Hide the scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+div.part {
+  background-color: blue;
+  width: 100%;
+  min-height: 10em;
+  padding: 20px;
+  margin-bottom: 100cm;
+}
+
+
 .questionnaire {
   display: table-row;
 }
