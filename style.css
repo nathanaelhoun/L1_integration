@@ -93,21 +93,43 @@ div.part h3 {
   0% {
     width: 125px;
   }
-
+  
   25% {
     width: 80px;
   }
-
+  
   50% {
     width: 160px;
   }
-
+  
   75% {
     width: 40px;
   }
-
+  
   100% {
     width: 125px;
+  }
+}
+
+#button-send:hover {
+  animation: sendBtn 1s 3;
+}
+
+@keyframes sendBtn {
+  0% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  33% {
+    transform: rotate(10deg) scale(1.2);
+  }
+
+  66% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1.2);
   }
 }
 
@@ -116,11 +138,6 @@ div.part h3 {
 }
 
 @keyframes movingBtn {
-  0% {
-    top: 0px;
-    left: 0px;
-  }
-
   10% {
     top: 20px;
     left: 35px;
