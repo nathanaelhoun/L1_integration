@@ -40,13 +40,13 @@ body{
         width: 125px;
     }
     25% {
-        width: 100px;
+        width: 80px;
     }
     50% {
         width: 160px;
     }
     75% {
-        width: 80px;
+        width: 40px;
     }
     100% {
         width: 125px;
