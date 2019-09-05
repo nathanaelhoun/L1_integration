@@ -1,8 +1,12 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Hanalei&display=swap');
+
 body {
   background-color: black;
   color: grey;
   padding: 0;
   margin: 0;
+  font-family: "Comic Sans MS";
 }
 
 /* Hide the scroll bar */
@@ -11,6 +15,10 @@ body {
 }
 body {
   overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Hanalei', cursive;
 }
 
 div.part {
@@ -103,13 +111,74 @@ div.part h3 {
   }
 }
 
+#epreuve_2:hover .fake_button  {
+    animation: movingBtn 3s infinite;
+}
+
+@keyframes movingBtn {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  10% {
+    top: 20px;
+    left: 35px;
+  }
+
+  20% {
+    top: 10px;
+    left: 55px;
+  }
+
+  30% {
+    top: 30px;
+    left: 5px;
+  }
+
+  40% {
+    top: 5px;
+    left: 40px;
+  }
+
+  50% {
+    top: 70px;
+    left: 40px;
+  }
+
+  60% {
+    top: 10px;
+    left: 80px;
+  }
+
+  70% {
+    top: 30px;
+    left: 10px;
+  }
+
+  80% {
+    top: 5px;
+    left: -10px;
+  }
+
+  40% {
+    top: -5px;
+    left: 70px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
 .fake_button {
   background-color: #44c767;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
   border-radius: 11px;
   border: 2px solid #18ab29;
-  Cliquez <a href="#suite">ici</a>display: inline-block;
+  -display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
