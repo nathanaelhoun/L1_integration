@@ -21,6 +21,38 @@ body{
     padding-right: 10px;
 }
 
+.questionnaire #small-input {
+    transition: width 3s;
+    width: 62px;
+}
+
+.questionnaire #small-input:hover {
+    width: 300px;
+}
+
+.questionnaire #small-input:focus {
+    width: 125px;
+    animation: changeSize 3s infinite;
+}
+
+@keyframes changeSize {
+    0% {
+        width: 125px;
+    }
+    25% {
+        width: 100px;
+    }
+    50% {
+        width: 160px;
+    }
+    75% {
+        width: 80px;
+    }
+    100% {
+        width: 125px;
+    }
+}
+
 .fake_button {
 	background-color:#44c767;
 	-moz-border-radius:11px;
