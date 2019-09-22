@@ -61,13 +61,25 @@
     
     <!-- ---------- Section 2 : Bouton ---------- -->
 
-    <div class="part" id="section_2" style="display: none;">
+    <div class="part" id="section_2" style="display: block;">
+        <!-- Title -->
+        <h2>Épreuve n°2</h2>
+        <h3>Appuyer sur le bouton</h3>
+
+        <!-- Button -->
         <button type="button" class="fake_button" name="fake_button">
-            <span>Cliquez <a href="#epreuve_3">ici</a></span>
+            <span>Cliquez <a href="#epreuve_3" onclick="sectionTwo()">ici</a></span>
         </button>
     </div>
+
+    <!-- ---------- Section 3 : Chargement ---------- -->
     
-    <div class="part" id="section_3" style="display: none;">
+    <div class="part" id="section_3" onmouseover="setTimeout(sectionThree(), 3000)" style="display: block;">
+        <!-- Title -->
+        <h2>Épreuve n°3</h2>
+        <h3>Chargement de l'épreuve en cours...</h3>
+
+        <!-- Loading -->
         <div class="loading">
             <span>Chargement...</span>
         </div>

@@ -30,3 +30,16 @@ function sectionOne() {
         alert("Autrement, veuillez débrancher l'ordinateur et rechancher après 3 secondes.  ");
     }
 }
+
+/* ---------- Section 2 : Bouton ---------- */
+
+function sectionTwo() {
+    document.getElementById("section_3").style.display = "block";
+    alert("Félicitations ! Passage à l'épreuve n°3.");
+}
+
+/* ---------- Section 3 : Chargement ---------- */
+
+function sectionThree() {
+    alert('Carottes');
+}

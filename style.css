@@ -141,7 +141,7 @@ h1 {
 
 /* ---------- Section 2 : Bouton ---------- */
 
-#epreuve_2:hover .fake_button  {
+#section_2:hover .fake_button  {
     animation: movingBtn 3s infinite;
 }
 
