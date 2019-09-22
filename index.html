@@ -7,48 +7,73 @@
     <title>Bienvenue à vous les L1</title>
 </head>
 <body>
-    <div id="bienvenue" class="part">
+    <!-- ---------- Section 0 : Bienvenue ---------- -->
+
+    <div class="part "id="bienvenue">
         <h1>Bienvenue sur <a href="#bienvenue">honte.melish</a>, la pire application d'intégration</h1>
         <p>Come disais l'autres, bon chance !</p>
     </div>
-    
-    <div id="epreuve_1" class="part">
+
+    <!-- ---------- Section 1 : Formulaire ---------- -->
+
+    <div class="part" id="section_1">
+        <!-- Title -->
         <h2>Épreuve n°1</h2>
         <h3>Remplir vos informations</h3>
-        <form class="questionnaire" action="index.html" method="post">
-            <div class="alert">
-                Les adresses ne correspondent pas !
+
+        <!-- Form -->
+        <form id="data_form" action="#" method="GET">
+            <div>
+                <!-- Mail -->
+                <label for="email">Adresse de courrier électronique*</label>
+                <input type="email" id="data_form-mail_name" value="Mon courriel">
+                <input type="text" value="@" style="width: 11px;" disabled>
+                <input type="email" id="data_form-mail_domain" placeholder="Nom de domaine">
+                <select>
+                    <option value="couk">.co.uk</option>
+                    <option value="cn">.cn</option>
+                    <option value="0">-- choisir --</option>
+                    <option value="es">.es</option>
+                    <option value="net">.net</option>
+                    <option value="be">.be</option>
+                    <option value="co">.co</option>
+                    <option value="eu">.eu</option>
+                    <option value="fr">.fr</option>
+                    <option value="paris">.paris</option>
+                    <option value="com">.com</option>
+                    <option value="shop">.shop</option>
+                    <option value="org">.org</option>
+                </select>
             </div>
             
-            <div class="form_part">
-                <label for="email">Email*</label>
-                <input type="email" name="email" value="Mon adresse mail">
+            <!-- Button -->
+            <div>
+                <button type="button" id="data_form-send" name="envoyer">Envoyer</button>
             </div>
             
-            <div class="form_part">
-                <button type="button" id="button-send" name="envoyer">Envoyer</button>
-            </div>
-            
-            <div class="form_part">
-                <label for="confirmation_email">Confirmation*</label>
-                <input type="email" id="small-input" name="confirmation_email" value="Confirmer mon adresse mail">
+            <!-- Mail (2) -->
+            <div>
+                <label for="confirmation_email">Confirmation de l'adresse*</label>
+                <input type="email" id="data_form-confirm" value="Confirmer mon courriel">
             </div>
         </form>
     </div>
     
-    <div id="epreuve_2" class="part">
+    <!-- ---------- Section 2 : Bouton ---------- -->
+
+    <div class="part" id="section_2" style="display: none;">
         <button type="button" class="fake_button" name="fake_button">
             <span>Cliquez <a href="#epreuve_3">ici</a></span>
         </button>
     </div>
     
-    <div id="epreuve_3" class="part">
+    <div class="part" id="section_3" style="display: none;">
         <div class="loading">
             <span>Chargement...</span>
         </div>
     </div>
     
-    <div id="epreuve_4" class="part">
+    <div class="part" id="section_4" style="display: none;">
         <div class="animated-text">
             <div class="line">Bienvenue chez</div>
             <div class="line">Les CMIs Informatique</div>

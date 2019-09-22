@@ -15,7 +15,7 @@ body {
     display: none;
 }
 
-/* ---------- Basic elements ---------- */
+/* ---------- Title ---------- */
 
 h1 {
     font-family: 'Hanalei', cursive;
@@ -29,7 +29,7 @@ h1 {
     min-height: 10em;
     padding: 20px;
     margin: 0;
-    margin-bottom: 5cm; /**En attendant de mettre 100cm;*/
+    margin-bottom: 5cm; /** TODO: En attendant de mettre 100cm;*/
     text-align: center;
 }
 
@@ -61,36 +61,36 @@ h1 {
     color: lime;
 }
 
-/* ---------- Section 1 : Questionnaire ---------- */
+/* ---------- Section 1 : Formulaire ---------- */
 
-.questionnaire {
+#data_form {
     display: table-row;
 }
 
-.questionnaire .alert {
+#data_form .alert {
     color: red;
     text-transform: uppercase;
 }
 
-.questionnaire label, input {
+#data_form label, input {
     display: table-cell;
     margin-bottom: 10px;
 }
 
-.questionnaire label {
+#data_form label {
     padding-right: 10px;
 }
 
-.questionnaire #small-input {
+#data_form #data_form-confirm {
     transition: width 3s;
     width: 62px;
 }
 
-.questionnaire #small-input:hover {
+#data_form #data_form-confirm:hover {
     width: 300px;
 }
 
-.questionnaire #small-input:focus {
+#data_form #data_form-confirm:focus {
     width: 125px;
     animation: changeSize 3s infinite;
 }
@@ -117,7 +117,7 @@ h1 {
     }
 }
 
-#button-send:hover {
+#data_form-send:hover {
     animation: sendBtn 1s 3;
 }
 
