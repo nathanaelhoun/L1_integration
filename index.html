@@ -26,11 +26,11 @@
             <div>
                 <!-- Mail -->
                 <label for="email">Adresse de courrier électronique*</label>
-                <input type="email" id="data_form-mail_name" value="Mon courriel">
+                <input type="email" id="data_form-mail-name" value="Mon courriel">
                 <input type="text" value="@" style="width: 11px;" disabled>
-                <input type="email" id="data_form-mail_domain" placeholder="Nom de domaine">
-                <select>
-                    <option value="couk">.co.uk</option>
+                <input type="email" id="data_form-mail-domain" placeholder="Nom de domaine">
+                <select id="data_form-mail-last">
+                    <option value="co.uk">.co.uk</option>
                     <option value="cn">.cn</option>
                     <option value="0">-- choisir --</option>
                     <option value="es">.es</option>
@@ -48,7 +48,7 @@
             
             <!-- Button -->
             <div>
-                <button type="button" id="data_form-send" name="envoyer">Envoyer</button>
+                <button type="button" id="data_form-send" onclick="sectionOne()">Envoyer</button>
             </div>
             
             <!-- Mail (2) -->
