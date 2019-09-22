@@ -298,8 +298,10 @@ h1 {
     }
 }
 
+/* ---------- Section 4 : Liste ---------- */
+
 .animated-text{
-    padding: 0 30px;
+    padding: 0 10px;
     height: 60px;
     background-color: #3498db;
     overflow: hidden;

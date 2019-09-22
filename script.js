@@ -21,9 +21,11 @@ function sectionOne() {
             &&
         mailName.value + "@" + mailDomain.value + "." + mailLast.value == confirmmail.value
     ) {
+        // Success message
         document.getElementById("section_2").style.display = "block";
         alert("Félicitations ! Passage à l'épreuve n°2.");
     } else {
+        // Error message
         alert("#ERREUR : Attention il y a des erreurs dans le formulaire");
         alert("Peut-être avez-vous mal écrit l'adresse mail ?");
         alert("Ou alors le problème vient de la confirmation d'adresse mail ...");
@@ -34,12 +36,28 @@ function sectionOne() {
 /* ---------- Section 2 : Bouton ---------- */
 
 function sectionTwo() {
+    // Success message
     document.getElementById("section_3").style.display = "block";
     alert("Félicitations ! Passage à l'épreuve n°3.");
+
+    // Next section
+    setTimeout(sectionThree, 15000)
 }
 
 /* ---------- Section 3 : Chargement ---------- */
 
 function sectionThree() {
-    alert('Carottes');
+    // Text changement
+    let currentSection = document.getElementById('section_3');
+    let currentSubtitle = currentSection.getElementsByTagName("h3")[0];
+    currentSubtitle.innerHTML = "Bon... Visiblement ça ne charge pas...";
+
+    // Success message
+    setTimeout(sectionThreeNext, 2000)
+}
+
+function sectionThreeNext() {
+    // Success message
+    document.getElementById("section_4").style.display = "block";
+    alert("Félicitations ! Passage à l'épreuve n°4.");
 }
