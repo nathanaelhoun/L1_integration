@@ -1,324 +1,334 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css?family=Hanalei&display=swap');
 
+/* ---------- Body ---------- */
 body {
-  background-color: black;
-  color: grey;
-  padding: 0;
-  margin: 0;
-  font-family: "Comic Sans MS";
+    background-color: black;
+    color: grey;
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS";
+    overflow-x: hidden;
 }
 
-/* Hide the scroll bar */
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
-body {
-  overflow-x: hidden;
-}
+
+/* ---------- Basic elements ---------- */
 
 h1 {
     font-family: 'Hanalei', cursive;
 }
 
-div.part {
-  background-color: blue;
-  width: 100%;
-  min-height: 10em;
-  padding: 20px;
-  margin: 0;
-  margin-bottom: 5cm; /**En attendant de mettre 100cm;*/
-  text-align: center;
+/* ---------- Part ---------- */
+
+.part {
+    background-color: blue;
+    width: 100%;
+    min-height: 10em;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 5cm; /**En attendant de mettre 100cm;*/
+    text-align: center;
 }
 
-div.part h2 {
-  color: deepPink;
-  text-align: right;
-  padding: 5px;
-  margin: 0 10em 0 0;
+.part h2 {
+    color: deepPink;
+    text-align: right;
+    padding: 5px;
+    margin: 0 10em 0 0;
 }
 
-div.part h3 {
-  color: magenta;
-  font-size: 20px;
-  font-variant: small-caps;
-  text-align: right;
-  padding: 0;
-  margin: 0 10em 10px 0;
+.part h3 {
+    color: magenta;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: right;
+    padding: 0;
+    margin: 0 10em 10px 0;
 }
+
+/* ---------- Section 0 : Bienvenue ---------- */
 
 #bienvenue {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 #bienvenue a {
-  width: 100%;
-  text-align: center;
-  color: lime;
+    width: 100%;
+    text-align: center;
+    color: lime;
 }
 
+/* ---------- Section 1 : Questionnaire ---------- */
+
 .questionnaire {
-  display: table-row;
+    display: table-row;
 }
 
 .questionnaire .alert {
-  color: red;
-  text-transform: uppercase;
+    color: red;
+    text-transform: uppercase;
 }
 
 .questionnaire label, input {
-  display: table-cell;
-  margin-bottom: 10px;
+    display: table-cell;
+    margin-bottom: 10px;
 }
 
 .questionnaire label {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 .questionnaire #small-input {
-  transition: width 3s;
-  width: 62px;
+    transition: width 3s;
+    width: 62px;
 }
 
 .questionnaire #small-input:hover {
-  width: 300px;
+    width: 300px;
 }
 
 .questionnaire #small-input:focus {
-  width: 125px;
-  animation: changeSize 3s infinite;
+    width: 125px;
+    animation: changeSize 3s infinite;
 }
 
 @keyframes changeSize {
-  0% {
-    width: 125px;
-  }
-  
-  25% {
-    width: 80px;
-  }
-  
-  50% {
-    width: 160px;
-  }
-  
-  75% {
-    width: 40px;
-  }
-  
-  100% {
-    width: 125px;
-  }
+    0% {
+        width: 125px;
+    }
+    
+    25% {
+        width: 80px;
+    }
+    
+    50% {
+        width: 160px;
+    }
+    
+    75% {
+        width: 40px;
+    }
+    
+    100% {
+        width: 125px;
+    }
 }
 
 #button-send:hover {
-  animation: sendBtn 1s 3;
+    animation: sendBtn 1s 3;
 }
 
 @keyframes sendBtn {
-  0% {
-    transform: rotate(0deg) scale(1.2);
-  }
-
-  33% {
-    transform: rotate(10deg) scale(1.2);
-  }
-
-  66% {
-    transform: rotate(-10deg) scale(1.2);
-  }
-
-  100% {
-    transform: rotate(0deg) scale(1.2);
-  }
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    
+    33% {
+        transform: rotate(10deg) scale(1.2);
+    }
+    
+    66% {
+        transform: rotate(-10deg) scale(1.2);
+    }
+    
+    100% {
+        transform: rotate(0deg) scale(1.2);
+    }
 }
+
+/* ---------- Section 2 : Bouton ---------- */
 
 #epreuve_2:hover .fake_button  {
     animation: movingBtn 3s infinite;
 }
 
 @keyframes movingBtn {
-  10% {
-    top: 20px;
-    left: 35px;
-  }
-
-  20% {
-    top: 10px;
-    left: 55px;
-  }
-
-  30% {
-    top: 30px;
-    left: 5px;
-  }
-
-  40% {
-    top: 5px;
-    left: 40px;
-  }
-
-  50% {
-    top: 70px;
-    left: 40px;
-  }
-
-  60% {
-    top: 10px;
-    left: 80px;
-  }
-
-  70% {
-    top: 30px;
-    left: 10px;
-  }
-
-  80% {
-    top: 5px;
-    left: -10px;
-  }
-
-  40% {
-    top: -5px;
-    left: 70px;
-  }
-
-  100% {
-    top: 0px;
-    left: 0px;
-  }
+    10% {
+        top: 20px;
+        left: 35px;
+    }
+    
+    20% {
+        top: 10px;
+        left: 55px;
+    }
+    
+    30% {
+        top: 30px;
+        left: 5px;
+    }
+    
+    40% {
+        top: 5px;
+        left: 40px;
+    }
+    
+    50% {
+        top: 70px;
+        left: 40px;
+    }
+    
+    60% {
+        top: 10px;
+        left: 80px;
+    }
+    
+    70% {
+        top: 30px;
+        left: 10px;
+    }
+    
+    80% {
+        top: 5px;
+        left: -10px;
+    }
+    
+    40% {
+        top: -5px;
+        left: 70px;
+    }
+    
+    100% {
+        top: 0px;
+        left: 0px;
+    }
 }
 
 .fake_button {
-  background-color: #44c767;
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
-  border-radius: 11px;
-  border: 2px solid #18ab29;
-  -display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 11px 31px;
-  text-decoration: none;
-  text-shadow: 41px -11px 1px #2f6627;
-  position: relative;
-  transform: translate(180px 0px);
+    background-color: #44c767;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    border: 2px solid #18ab29;
+    -display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 11px 31px;
+    text-decoration: none;
+    text-shadow: 41px -11px 1px #2f6627;
+    position: relative;
+    transform: translate(180px 0px);
 }
 
 .fake_button span {
-  position: relative;
-  transform: translate(-180px 0px);
+    position: relative;
+    transform: translate(-180px 0px);
 }
 
 .fake_button:hover {
-  background-color: #5cbf2a;
+    background-color: #5cbf2a;
 }
 
 .fake_button:active {
-  position: relative;
-  top: 1px;
+    position: relative;
+    top: 1px;
 }
 
 .fake_button a {
-  text-decoration: none;
-  color: green;
+    text-decoration: none;
+    color: green;
 }
 
+/* ---------- Section 3 : Chargement ---------- */
+
 .loading{
-  margin-left: auto;
-  margin-right: auto;
-width: 200px;
-height: 200px;
-box-sizing: border-box;
-border-radius: 50%;
-border-top: 10px solid #e74c3c;
-position: relative;
-animation: anim1 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top: 10px solid #e74c3c;
+    position: relative;
+    animation: anim1 2s linear infinite;
 }
 
 .loading::before,
 .loading::after{
-  content: "";
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 0;
-  top:-10px;
-  box-sizing: border-box;
-  border-radius: 50%;
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top:-10px;
+    box-sizing: border-box;
+    border-radius: 50%;
 }
 
 .loading::before{
-  border-top: 10px solid #e67e22;
-  transform:rotate(120deg);
+    border-top: 10px solid #e67e22;
+    transform:rotate(120deg);
 }
 
 .loading::after{
-  border-top: 10px solid #3498db;
-  transform:rotate(240deg);
+    border-top: 10px solid #3498db;
+    transform:rotate(240deg);
 }
 
 .loading span{
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  color: #fff;
-  text-align: center;
-  line-height: 200px;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat",sans-serif;
-  font-size: 20px;
-  animation: anim2 2s linear infinite;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+    animation: anim2 2s linear infinite;
 }
 
 @keyframes anim1 {
-to{
-  transform: rotate(360deg);
-}
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes anim2 {
-  to{
-    transform: rotate(-360deg);
-  }
+    to{
+        transform: rotate(-360deg);
+    }
 }
 
 .animated-text{
-  padding: 0 30px;
-  height: 60px;
-  background-color: #3498db;
-  overflow: hidden;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #3498db;
+    overflow: hidden;
 }
 
 .animated-text .line {
-  line-height: 60px;
-  text-transform: uppercase;
-  font-family: "Montserrat",sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
 }
 
 .animated-text .line:first-child{
-  animation: text-defil 9s infinite ;
+    animation: text-defil 9s infinite ;
 }
 
 @keyframes text-defil {
-  0%{
-    margin-top:0;
-  }
-  37%{
-    margin-top:-60px;
-  }
-  74%{
-    margin-top:-120px;
-  }
-  90%{
-    margin-top:0;
-  }
+    0%{
+        margin-top:0;
+    }
+    37%{
+        margin-top:-60px;
+    }
+    74%{
+        margin-top:-120px;
+    }
+    90%{
+        margin-top:0;
+    }
 }
