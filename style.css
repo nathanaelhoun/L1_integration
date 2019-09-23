@@ -8,7 +8,6 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Comic Sans MS";
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +28,7 @@ h1 {
     min-height: 10em;
     padding: 20px;
     margin: 0;
-    margin-bottom: 5cm; /** TODO: En attendant de mettre 100cm;*/
+    margin-bottom: 3cm; /** TODO: En attendant de mettre 100cm;*/
     text-align: center;
 }
 
@@ -142,7 +141,7 @@ h1 {
 /* ---------- Section 2 : Bouton ---------- */
 
 #section_2:hover .fake_button  {
-    animation: movingBtn 3s infinite;
+    animation: movingBtn 6s infinite;
 }
 
 @keyframes movingBtn {
@@ -302,6 +301,7 @@ h1 {
 
 .animated-text{
     padding: 0 10px;
+    width: 1800px;
     height: 60px;
     background-color: #3498db;
     overflow: hidden;
@@ -333,4 +333,15 @@ h1 {
     90%{
         margin-top:0;
     }
+}
+
+.table-line {
+    width: 80%;
+    text-align: left;
+}
+
+.table-check {
+    padding-top: 25px;
+    padding-bottom: 0;
+    text-align: right;
 }
