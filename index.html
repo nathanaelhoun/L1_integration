@@ -1,118 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Bienvenue à vous les L1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Bienvenue à vous les L1</title>
 </head>
+
 <body>
-    <!-- ---------- Section 0 : Bienvenue ---------- -->
+  <!-- ---------- Section 0 : Bienvenue ---------- -->
 
-    <div class="part "id="bienvenue" style="background-color: blue;">
-        <h1>Bienvenue sur <a href="#bienvenue">honte.melish</a>, la pire application d'intégration</h1>
-        <p>Come disais l'autres, bon chance !</p>
+  <div class="part " id="bienvenue" style="background-color: blue;">
+    <h1>Bienvenue sur <a href="#bienvenue">honte.melish</a>, la pire application d'intégration</h1>
+    <p>Come disais l'autres, bon chance !</p>
+  </div>
+
+  <!-- ---------- Section 1 : Formulaire ---------- -->
+
+  <div class="part" id="section_1" style="background-color: green;">
+    <!-- Title -->
+    <h2>Épreuve n°1</h2>
+    <h3>Remplir vos informations</h3>
+
+    <!-- Form -->
+    <form id="data_form" action="#" method="GET">
+      <div>
+        <!-- Mail -->
+        <label for="email">Adresse de courrier électronique*</label>
+        <input type="email" id="data_form-mail-name" value="Mon courriel">
+        <input type="text" value="@" style="width: 11px;" disabled>
+        <input type="email" id="data_form-mail-domain" placeholder="Nom de domaine">
+        <select id="data_form-mail-last">
+          <option value="co.uk">.co.uk</option>
+          <option value="cn">.cn</option>
+          <option value="0">-- choisir --</option>
+          <option value="es">.es</option>
+          <option value="net">.net</option>
+          <option value="be">.be</option>
+          <option value="co">.co</option>
+          <option value="eu">.eu</option>
+          <option value="fr">.fr</option>
+          <option value="paris">.paris</option>
+          <option value="com">.com</option>
+          <option value="shop">.shop</option>
+          <option value="org">.org</option>
+          <option value="melish">.melish</option>
+        </select>
+      </div>
+
+      <!-- Button -->
+      <div>
+        <button type="button" id="data_form-send" onclick="sectionOne()">Envoyer</button>
+      </div>
+
+      <!-- Mail (2) -->
+      <div>
+        <label for="confirmation_email">Confirmation de l'adresse*</label>
+        <input type="email" id="data_form-confirm" value="Confirmer mon courriel">
+      </div>
+    </form>
+  </div>
+
+  <!-- ---------- Section 2 : Bouton ---------- -->
+
+  <div class="part" id="section_2" style="background-color: lightcoral; display: none;">
+    <!-- Title -->
+    <h2>Épreuve n°2</h2>
+    <h3>Cliquez là-bas</h3>
+
+    <!-- Button -->
+    <button type="button" class="fake_button" name="fake_button">
+      <span>Cliquez <a href="#epreuve_3" onclick="sectionTwo()">ici</a></span>
+    </button>
+  </div>
+
+  <!-- ---------- Section 3 : Chargement ---------- -->
+
+  <div class="part" id="section_3" style="background-color: palegoldenrod; display: none;">
+    <!-- Title -->
+    <h2>Épreuve n°3</h2>
+    <h3>Chargement de l'épreuve en cours...</h3>
+
+    <!-- Loading animation -->
+    <div class="loading">
+      <span>Chargement...</span>
+    </div>
+  </div>
+
+  <!-- ---------- Section 4 : Liste ---------- -->
+
+  <div class="part" id="section_4" style="background-color: cadetblue; width: 120%; display: none;">
+    <!-- Title -->
+    <h2>Épreuve n°4</h2>
+    <h3>Cocher les bonnes réponses</h3>
+
+    <!-- Text animation -->
+    <div class="animated-text">
+      <div class="line">Bienvenue chez</div>
+      <div class="line">Les CMI Informatique</div>
+      <div class="line">De Besançon</div>
     </div>
 
-    <!-- ---------- Section 1 : Formulaire ---------- -->
+    <!-- Liste -->
+    <table id="super_table">
+      <tbody>
+        <tr>
+          <td class="table-line">Bonjour à tous</td>
+          <td class="table-check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td class="table-line">Au revoir à tous</td>
+          <td class="table-check"><input type="checkbox"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <div class="part" id="section_1" style="background-color: green;">
-        <!-- Title -->
-        <h2>Épreuve n°1</h2>
-        <h3>Remplir vos informations</h3>
 
-        <!-- Form -->
-        <form id="data_form" action="#" method="GET">
-            <div>
-                <!-- Mail -->
-                <label for="email">Adresse de courrier électronique*</label>
-                <input type="email" id="data_form-mail-name" value="Mon courriel">
-                <input type="text" value="@" style="width: 11px;" disabled>
-                <input type="email" id="data_form-mail-domain" placeholder="Nom de domaine">
-                <select id="data_form-mail-last">
-                    <option value="co.uk">.co.uk</option>
-                    <option value="cn">.cn</option>
-                    <option value="0">-- choisir --</option>
-                    <option value="es">.es</option>
-                    <option value="net">.net</option>
-                    <option value="be">.be</option>
-                    <option value="co">.co</option>
-                    <option value="eu">.eu</option>
-                    <option value="fr">.fr</option>
-                    <option value="paris">.paris</option>
-                    <option value="com">.com</option>
-                    <option value="shop">.shop</option>
-                    <option value="org">.org</option>
-                    <option value="melish">.melish</option>
-                </select>
-            </div>
+  <!-- ---------- Section 5 : CMI ---------- -->
 
-            <!-- Button -->
-            <div>
-                <button type="button" id="data_form-send" onclick="sectionOne()">Envoyer</button>
-            </div>
-
-            <!-- Mail (2) -->
-            <div>
-                <label for="confirmation_email">Confirmation de l'adresse*</label>
-                <input type="email" id="data_form-confirm" value="Confirmer mon courriel">
-            </div>
-        </form>
-    </div>
-
-    <!-- ---------- Section 2 : Bouton ---------- -->
-
-    <div class="part" id="section_2" style="background-color: lightcoral; display: none;">
-        <!-- Title -->
-        <h2>Épreuve n°2</h2>
-        <h3>Cliquez là-bas</h3>
-
-        <!-- Button -->
-        <button type="button" class="fake_button" name="fake_button">
-            <span>Cliquez <a href="#epreuve_3" onclick="sectionTwo()">ici</a></span>
-        </button>
-    </div>
-
-    <!-- ---------- Section 3 : Chargement ---------- -->
-
-    <div class="part" id="section_3" style="background-color: palegoldenrod; display: none;">
-        <!-- Title -->
-        <h2>Épreuve n°3</h2>
-        <h3>Chargement de l'épreuve en cours...</h3>
-
-        <!-- Loading animation -->
-        <div class="loading">
-            <span>Chargement...</span>
+  <div class="part" id="section_5" style="background-color: cadetblue; width: 120%; display: block;">
+    <form id="questionnaireCMI" class="questionnaire" action="#">
+      <div class="question">
+        <div class="hovertoreveal">
+          <span>Q</span>
+          <span class="hidden-letter">u</span>
+          <span class="hidden-letter">e</span>
+          <span class="hidden-letter">&nbsp</span>
+          <span class="hidden-letter">v</span>
+          <span class="hidden-letter">e</span>
+          <span class="hidden-letter">u</span>
+          <span class="hidden-letter">t</span>
+          <span class="hidden-letter">&nbsp</span>
+          <span class="hidden-letter">d</span>
+          <span class="hidden-letter">i</span>
+          <span class="hidden-letter">r</span>
+          <span class="hidden-letter">e</span>
+          <span class="hidden-letter">&nbsp</span>
+          <span class="hidden-letter">C</span>
+          <span class="hidden-letter">M</span>
+          <span class="hidden-letter">I</span>
+          <span class="hidden-letter">&nbsp</span>
+          <span class="hidden-letter">?</span>
+          <span class="hidden-letter">?</span>
+          <span class="hidden-letter">?</span>
         </div>
-    </div>
+        <div class="reponses">
+          <input id="q1answer1" name="question1" type="radio">Course de Mineurs Intrépides
+          <input id="q1answer2" name="question1" type="radio">Cours de Musique Irlandaise
+          <input id="q1answer3" name="question1" type="radio">Cursus Master en Ingénierie
+          <input id="q1answer4" name="question1" type="radio">Cursus Ingénierie en Master
+        </div>
+      </div>
 
-    <!-- ---------- Section 4 : Liste ---------- -->
-
-    <div class="part" id="section_4" style="background-color: cadetblue; width: 120%; display: none;">
-        <!-- Title -->
-        <h2>Épreuve n°4</h2>
-        <h3>Cocher les bonnes réponses</h3>
-
-        <!-- Text animation -->
-        <div class="animated-text">
-            <div class="line">Bienvenue chez</div>
-            <div class="line">Les CMI Informatique</div>
-            <div class="line">De Besançon</div>
+      <div class="question">
+        <div class="hovertoreveal">
+          <span>Q</span>
+          <span class="hidden-letter">u</span>
+          <span class="hidden-letter">e</span>
+          <span class="hidden-letter">&nbsp</span>
+          <span class="hidden-letter">s</span>
+          <span class="hidden-letter">i</span>
+          <span class="hidden-letter">g</span>
+          <span class="hidden-letter">n</span>
+          <span class="hidden-letter">i</span>
+          <span class="hidden-letter">f</span>
+          <span class="hidden-letter">i</span>
+          <span class="hidden-letter">e</span>
+          <span class="hidden-letter">&nbsp</span>
+          <span class="hidden-letter">P</span>
+          <span class="hidden-letter">D</span>
+          <span class="hidden-letter">L</span>
+          <span class="hidden-letter">?</span>
+          <span class="hidden-letter">?</span>
         </div>
 
-        <!-- Liste -->
-        <table id="super_table">
-            <tbody>
-                <tr>
-                    <td class="table-line">Bonjour à tous</td>
-                    <td class="table-check"><input type="checkbox"></td>
-                </tr>
-                <tr>
-                    <td class="table-line">Au revoir à tous</td>
-                    <td class="table-check"><input type="checkbox"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+        <div class="reponses">
+          <input id="q2answer1" name="question2" type="radio">PseuDo-Langage
+          <input id="q2answer2" name="question2" type="radio">Personne ne le sait
+          <input id="q2answer3" name="question2" type="radio">Pire de Développement Langage
+          <input id="q2answer4" name="question2" type="radio">Piste de Débuggage Littéral
+        </div>
+
+      </div>
+
+
+      <button type="button" name="send_CMI_info" onclick="sectionFive()">
+        Valider les réponses......
+      </button>
+
+    </form>
+  </div>
 </body>
+
 </html>
