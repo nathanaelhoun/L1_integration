@@ -61,6 +61,20 @@ function sectionThreeNext() {
   alert("Félicitations ! Passage à l'épreuve n°4.");
 }
 
+//* ---------- Section 5 : Quizz (1) ---------- */
+
+function sectionFour() {
+    let goodAnswer = document.getElementById("super_quizz_c");
+
+    if(goodAnswer.checked == true) {
+        alert("C'est une très bonne réponse ! (Même s'il est important de préférer le JS au C)");
+        document.getElementById("section_5").style.display = "block";
+    } else {
+        alert("C'est une très bonne réponse ! En revanche ce n'est pas la réponse qu'il fallait cocher... C'est pas grave, tu peux encore essayer ...");
+    }
+}
+
+//* ---------- Section 5 : Quizz (2) ---------- */
 
 function sectionFive() {
   let answer1 = document.getElementById("q1answer3");
