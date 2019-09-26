@@ -25,7 +25,7 @@ h1 {
   min-height: 10em;
   padding: 20px;
   margin: 0;
-  margin-bottom: 3cm;
+  margin-bottom: 100cm;
   /** TODO: test : 3cm - prod : 100cm */
   text-align: center;
 }
@@ -269,7 +269,7 @@ h1 {
   position: absolute;
   width: 200px;
   height: 200px;
-  color: #fff;
+  color: green;
   text-align: center;
   line-height: 200px;
   align-items: center;
@@ -286,8 +286,14 @@ h1 {
 }
 
 @keyframes anim2 {
-  to {
-    transform: rotate(360deg);
+  0% {
+    transform: rotate(0deg) translate(-30px);
+  }
+  50% {
+    transform: rotate(360deg) translate(80px);
+  }
+  100% {
+    transform: rotate(720deg) translate(-30px);
   }
 }
 
