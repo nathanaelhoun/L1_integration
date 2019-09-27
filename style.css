@@ -135,7 +135,7 @@ h1 {
 }
 
 /* ---------- Section 2 : Bouton ---------- */
-#section_2:hover .fake_button {
+#section_5:hover .fake_button {
   animation: movingBtn 6s infinite;
 }
 
@@ -228,6 +228,12 @@ h1 {
 .fake_button a {
   text-decoration: none;
   color: green;
+}
+
+/* Section 6 : iefjieifjeif */
+#section_6 .questionnaire .question {
+  margin-top: 70px;
+  padding-top: 20px;
 }
 
 /* ---------- Section 3 : Chargement ---------- */

@@ -62,35 +62,9 @@
     </form>
   </div>
 
-  <!-- ---------- Section 2 : Bouton ---------- -->
+  <!-- ---------- Section 2 : Quizz (1) ---------- -->
 
-  <div class="part" id="section_2" style="background-color: lightcoral; display: none;">
-    <!-- Title -->
-    <h2>Épreuve n°2</h2>
-    <h3>Cliquez là-bas</h3>
-
-    <!-- Button -->
-    <button type="button" class="fake_button" name="fake_button">
-      <span>Cliquez <a href="#epreuve_3" onclick="sectionTwo()">ici</a></span>
-    </button>
-  </div>
-
-  <!-- ---------- Section 3 : Chargement ---------- -->
-
-  <div class="part" id="section_3" style="background-color: palegoldenrod; display: none;">
-    <!-- Title -->
-    <h2>Épreuve n°3</h2>
-    <h3>Chargement de l'épreuve en cours...</h3>
-
-    <!-- Loading animation -->
-    <div class="loading">
-      <span>Chargement...</span>
-    </div>
-  </div>
-
-  <!-- ---------- Section 4 : Quizz (1) ---------- -->
-
-  <div class="part" id="section_4" style="background-color: cadetblue; width: 120%; display: none;">
+  <div class="part" id="section_2" style="background-color: cadetblue; width: 120%; display: none;">
     <!-- Title -->
     <h2>Épreuve n°4</h2>
     <h3>Cocher la bonne réponse</h3>
@@ -115,26 +89,42 @@
           <td class="table-check"><input type="radio" name="super_quizz"> Réponse A</td>
         </tr>
         <tr>
-            <td class="table-line">C : Manger des carottes</td>
-            <td class="table-check"><input type="radio" name="super_quizz"> Réponse D</td>
+          <td class="table-line">C : Manger des carottes</td>
+          <td class="table-check"><input type="radio" name="super_quizz"> Réponse D</td>
         </tr>
         <tr>
-            <td class="table-line">D : Coder en JS plutôt qu'en C</td>
-            <td class="table-check"><input type="radio" name="super_quizz">Réponse B</td>
+          <td class="table-line">D : Coder en JS plutôt qu'en C</td>
+          <td class="table-check"><input type="radio" name="super_quizz">Réponse B</td>
         </tr>
       </tbody>
     </table>
 
     <!-- Button -->
     <div>
-        <button type="button" onclick="sectionFour()">Je suis certain de ma réponse et je souhaite, j'ai le désir et la volonté la plus profonde de valider ma réponse. Je suis un esprit libre et courageux, me tromper ne me fait pas peur. De plus, j'ai lu le libellé complet de ce bouton j'ai donc visiblement du temps à perdre.</button>
+      <button type="button" onclick="sectionTwo()">Je suis certain de ma réponse et je souhaite, j'ai le désir et la volonté la plus profonde de valider ma réponse. Je suis un esprit libre et courageux, me tromper ne me fait pas peur. De plus, j'ai
+        lu le libellé complet de ce bouton j'ai donc visiblement du temps à perdre.</button>
     </div>
   </div>
 
 
-  <!-- ---------- Section 5 : Quizz (2) ---------- -->
+  <!-- ---------- Section 3 : Chargement ---------- -->
 
-  <div class="part" id="section_5" style="background-color: cadetblue; width: 120%; display: none;">
+  <div class="part" id="section_3" style="background-color: palegoldenrod; display: none;">
+    <!-- Title -->
+    <h2>Épreuve n°3</h2>
+    <h3>Chargement de l'épreuve en cours...</h3>
+
+    <!-- Loading animation -->
+    <div class="loading">
+      <span>Chargement...</span>
+    </div>
+  </div>
+
+
+
+  <!-- ---------- Section 4 : Quizz (2) ---------- -->
+
+  <div class="part" id="section_4" style="background-color: cadetblue; width: 120%; display: none;">
     <form id="questionnaireCMI" class="questionnaire" action="#">
       <div class="question">
         <div class="hovertoreveal">
@@ -258,25 +248,113 @@
 
       </div>
 
-<span style="color:red">Consigne : Répondez aux questions précédentes </span>
-      <button type="button" name="send_CMI_info" onclick="sectionFive()">
+      <span style="color:red">Consigne : Répondez aux questions précédentes </span>
+      <button type="button" name="send_CMI_info" onclick="sectionFour()">
         Valider les réponses......
       </button>
 
     </form>
   </div>
 
-    <!-- ---------- Section 6 : Gagné ---------- -->
 
-    <div class="part" id="section_6" style="background-color: lightcoral; display: none;">
-        <!-- Title -->
-        <h2>C'est gagné !</h2>
+  <!-- ---------- Section 5 : Bouton ---------- -->
 
-        <br />
+  <div class="part" id="section_5" style="background-color: lightcoral; display: none;">
+    <!-- Title -->
+    <h2>Épreuve n°2</h2>
+    <h3>Cliquez là-bas</h3>
 
-        <!-- Gif -->
-        <div><iframe src="https://giphy.com/embed/l0HUqsz2jdQYElRm0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/dance-dancing-twerk-l0HUqsz2jdQYElRm0">via GIPHY</a></p>
+    <!-- Button -->
+    <button type="button" class="fake_button" name="fake_button">
+      <span>Cliquez <a href="#epreuve_6" onclick="sectionFive()">ici</a></span>
+    </button>
+  </div>
+
+
+  <!-- ---------- Section 6 : Fux quizz ---------- -->
+  <div id="section_6" class="part" style="background-color: #F500D8; display:none;">
+    <h2>Épreuve n° 5 - heu non michel c'est pas la 5 - Ah t'es sûr ? J'ai plus le compte moi - Bref lance l'épreuve - Ah oui pardon : Questionnaire</h2>
+    <form action="#" id="questionnaire_ne_pas_remplir" class="questionnaire">
+
+      <div class="question">
+        Quel est le plus grand parmi ces nombres ?
+        <input id="noAnswer11" name="noA1" type="radio">1
+        <input id="noAnswer12" name="noA1" type="radio">15247
+        <input id="noAnswer13" name="noA1" type="radio">3
+        <input id="noAnswer14" name="noA1" type="radio">4
       </div>
+
+      <div class="question">
+        Parmi ces plats, lequel est souvent associé à une origine italienne ?
+        <input id="noAnswer21" name="noA2" type="radio">La pizza
+        <input id="noAnswer22" name="noA2" type="radio">Le riz
+        <input id="noAnswer23" name="noA2" type="radio">Le sans plomb 98
+        <input id="noAnswer24" name="noA2" type="radio">Le boeuf bourguignon
+      </div>
+
+      <div class="question">
+        Combien de boutons possède une souris classique
+        <input id="noAnswer31"name="noA3" type="radio">3 (droit,gauche,molette)
+        <input id="noAnswer32"name="noA3" type="radio">91 (toutes les lettres de l'alphabet, plus les chiffres, plus les symboles...)
+        <input id="noAnswer33"name="noA3" type="radio">42 (la réponse de la vie)
+        <input id="noAnswer34"name="noA3" type="radio">1001
+      </div>
+
+      <div class="question">
+        Quel est le plus grand réseau social du monde ?
+        <input id="noAnswer41" name="noA4" type="radio">Facebook
+        <input id="noAnswer42" name="noA4" type="radio">Tumblr
+        <input id="noAnswer43" name="noA4" type="radio">La Russie
+        <input id="noAnswer44" name="noA4" type="radio">Le PDL
+      </div>
+
+      <div class="question">
+        Lequel de ces légumes est orange dès le début de sa croissance ?
+        <input id="noAnswer51" name="noA5 "type="radio">La carotte
+        <input id="noAnswer52" name="noA5 "type="radio">L'orange
+        <input id="noAnswer53" name="noA5 "type="radio">Le topinambour
+        <input id="noAnswer54" name="noA5 "type="radio">La courge
+      </div>
+
+      <div class="question">
+        Quel jour est né l'inventeur de Linux (Linux Torvalds) ?
+        <input id="noAnswer61" type="radio">Le jour de sa naissance + 1
+        <input id="noAnswer62" type="radio">le 28/12/1969
+        <input id="noAnswer63" type="radio">le 12/26/1969
+        <input id="noAnswer64" type="radio">le 26/12/1969
+        <input id="noAnswer65" type="radio">le 26/12/1968
+        <input id="noAnswer66" type="radio">le 28/12/1968
+
+      </div>
+
+      <div class="question">
+        <input id="noAnswer71" type="radio">
+        <input id="noAnswer72" type="radio">
+        <input id="noAnswer73" type="radio">
+        <input id="noAnswer74" type="radio">
+      </div>
+
+
+      <span style="color:red">Consigne : <i><em>NE</em></i> répondez <i><em>PAS</em></i> aux questions </span>
+      <button type="button" name="send_CMI_info" onclick="sectionSix()">
+        Valider les réponses......
+      </button>
+    </form>
+  </div>
+
+
+  <!-- ---------- Section 7 : Gagné ---------- -->
+
+  <div class="part" id="section_7" style="background-color: lightcoral; display: none;">
+    <!-- Title -->
+    <h2>C'est gagné !</h2>
+
+    <br />
+
+    <!-- Gif -->
+    <div><iframe src="https://giphy.com/embed/l0HUqsz2jdQYElRm0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+    <p><a href="https://giphy.com/gifs/dance-dancing-twerk-l0HUqsz2jdQYElRm0">via GIPHY</a></p>
+  </div>
 </body>
 
 </html>
